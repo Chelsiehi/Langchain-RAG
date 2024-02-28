@@ -17,7 +17,7 @@ vector_db=FAISS.load_local('Lecture4.faiss',embeddings)
 retriever=vector_db.as_retriever(search_kwargs={"k":5})
 
 chat=ChatOpenAI(
-    openai_api_key="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",
+    openai_api_key="key",
 )
 
 system_prompt=SystemMessagePromptTemplate.from_template('You are a helpful assistant.')
